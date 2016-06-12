@@ -1472,7 +1472,7 @@
 	 * Adds and removes a CSS classes.
 	 * Works with SVG as well.
 	 * add and remove are arrays of strings,
-	 * or if remove is ommited add is a string and overwrites all classes.
+	 * or if remove is omitted add is a string and overwrites all classes.
 	 */
 	var _updateClass = function(element, add, remove) {
 		var prop = 'className';
@@ -1483,7 +1483,7 @@
 			prop = 'baseVal';
 		}
 
-		//When remove is ommited, we want to overwrite/set the classes.
+		//When remove is omitted, we want to overwrite/set the classes.
 		if(remove === undefined) {
 			element[prop] = add;
 			return;
